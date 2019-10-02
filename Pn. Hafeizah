@@ -1,0 +1,37 @@
+// Lab 4 : Exercise 3
+#include <iostream>
+using namespace std;
+
+int displaystar()
+{
+   cout << "******************** ";
+   return 0;
+ 
+}
+
+int main()
+{
+   
+    int loan_amount= 0;
+    double annual_interest_rate=0;
+    int years = 0;
+    int monthly_payment= 0;
+    cout<< " Input loan amount (RM):";
+    cin>>loan_amount;
+    cout<< " Input annual interest rate(%):";
+    cin>>annual_interest_rate;
+    cout<< " Input number of years:";
+    cin>>years;
+    //calculate
+    monthly_payment= ((loan_amount*(annual_interest_rate/100)*years)+loan_amount)/120;
+    cout<<" Monthly payment for this loan is (RM):"<< monthly_payment<<endl;
+   
+    return 0;
+    
+}
+    
+    
+    
+    
+    
+    
